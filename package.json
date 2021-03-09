@@ -1,0 +1,36 @@
+{
+  "name": "warlock-script",
+  "version": "0.0.1",
+  "description": "Easily use redis scripts in Node",
+  "main": "src/index",
+  "scripts": {
+    "pretest": "npm run start-redis",
+    "posttest": "npm run cleanup",
+    "test": "mocha --exit test/script",
+    "start-redis": "docker-compose up -d redis",
+    "cleanup": "docker-compose stop && docker-compose rm -f",
+    "monitor": "docker-compose up monitor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grapevine-ai/warlock-script"
+  },
+  "keywords": [
+    "redis",
+    "script",
+    "node.js",
+    "manager"
+  ],
+  "author": "Geoff Wagstaff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grapevine-ai/warlock-script"
+  },
+  "homepage": "https://github.com/grapevine-ai/warlock-script",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "ioredis": "^4.23.0",
+    "mocha": "^8.3.0"
+  }
+}
