@@ -21,7 +21,7 @@
     "node.js",
     "manager"
   ],
-  "author": "Geoff Wagstaff",
+  "author": "Nathaniel Cohen",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/grapevine-ai/warlock-script"
