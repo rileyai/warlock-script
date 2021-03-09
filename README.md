@@ -1,4 +1,4 @@
-redis-script
+warlock-script
 =======
 
 Easily run redis scripts from Node.
